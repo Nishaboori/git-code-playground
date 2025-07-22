@@ -1,236 +1,263 @@
-# Seller Risk MLOps Platform - Interactive UX Mockup
+# Seller Risk MLOps Platform - Streamlit Interactive Demo
 
-A comprehensive, interactive web application demonstrating the end-to-end MLOps platform experience for Walmart's Seller Risk models. This UX mockup helps engineers, data scientists, and stakeholders visualize and understand future-state workflows, from model development to real-time fraud prevention.
+A comprehensive, interactive web application built with **Streamlit** that demonstrates the end-to-end MLOps platform experience for Walmart's Seller Risk models. This interactive demo helps engineers, data scientists, and stakeholders visualize and understand future-state workflows, from model development to real-time fraud prevention.
 
-![Platform Overview](https://via.placeholder.com/800x400/004c91/ffffff?text=Seller+Risk+MLOps+Platform)
+![Platform Overview](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-239120?style=for-the-badge&logo=plotly&logoColor=white)
 
 ## 🚀 Features
 
 ### Multi-Persona Dashboard System
 Role-based dashboards tailored for different user types:
 
-- **Data Scientist Dashboard**: Model development workspace with experiment tracking, feature discovery, and EFS integration
-- **MLOps Engineer Dashboard**: Model promotion, deployment pipeline management, and infrastructure monitoring
-- **Risk Operations Dashboard**: Natural language strategy input, real-time fraud detection monitoring, and alert management
-- **Executive Dashboard**: High-level KPIs, business impact metrics, and strategic objectives tracking
+- **🧠 Data Scientist Dashboard**: Model development workspace with experiment tracking, feature discovery, and real-time testing playground
+- **🔧 MLOps Engineer Dashboard**: Model deployment pipeline management, infrastructure monitoring, and CI/CD workflows
+- **🛡️ Risk Operations Dashboard**: Natural language strategy input, real-time fraud detection monitoring, and alert management
+- **📈 Executive Dashboard**: High-level KPIs, business impact metrics, ROI analysis, and strategic objectives tracking
 
 ### Interactive Workflow Visualization
-- **Flow Navigation System**: Interactive selector for all 4 deployment flows
-- **Step-by-Step Simulation**: Detailed workflow visualization with progress indicators
-- **Real-Time Status Updates**: Live monitoring of deployment processes
-- **Decision Point Branching**: Interactive decision trees with branching logic
+- **4 Deployment Flows**: Same Project, Cross-Project, Element → WCNP, External → Element
+- **Step-by-Step Simulation**: Interactive workflow progression with real-time status updates
+- **Performance Metrics**: Live monitoring of latency, throughput, and system health
+- **Flow Comparison**: Side-by-side analysis of deployment strategies
 
 ### Real-Time Performance Simulation
-- **Live Metrics Dashboard**: Simulated real-time metrics updating every 2-3 seconds
-- **Performance Monitoring**: Latency (<50ms), throughput (100K+ TPS), and accuracy trends
-- **System Health**: Component status monitoring and alert management
-- **Capacity Planning**: Interactive load testing and scenario simulation
+- **Live Metrics Dashboard**: Updates every 3 seconds with realistic data variations
+- **Performance Trends**: Interactive charts showing latency (<50ms), throughput (100K+ TPS), and accuracy
+- **System Health Monitoring**: Component status, uptime tracking, and alert management
+- **Fraud Detection Events**: Real-time simulation of fraud prevention activities
 
-### Advanced ML Features
-- **Feature Store Integration**: Enterprise Feature Store (EFS) with cross-organizational permissions
-- **Model Registry**: Version management, performance comparison, and automated testing
-- **Experiment Tracking**: MLflow-style experiment management with metrics comparison
-- **Natural Language Strategies**: Text-to-model configuration translation
+### Natural Language Strategy Interface
+- **Strategy Translation**: Convert natural language descriptions into executable model configurations
+- **Shadow Mode Deployment**: Test strategies without affecting production
+- **Effectiveness Tracking**: Monitor strategy performance and optimization suggestions
 
-## 🛠 Technology Stack
+## 🛠️ Technology Stack
 
-- **Frontend**: React 18 with TypeScript
-- **Styling**: Tailwind CSS with custom design system
-- **Charts**: Recharts for interactive data visualizations
-- **Animations**: Framer Motion for smooth transitions
-- **Icons**: Lucide React for consistent iconography
-- **State Management**: React Context and local state
+- **Frontend Framework**: Streamlit
+- **Data Visualization**: Plotly Express & Graph Objects
+- **Data Processing**: Pandas, NumPy
+- **Styling**: Custom CSS with Walmart branding
+- **Interactive Components**: Streamlit native widgets and custom components
 
-## 📋 Deployment Flows
+## 📋 Prerequisites
 
-The platform demonstrates 4 key deployment patterns:
+- Python 3.8 or higher
+- pip package manager
 
-### Flow 1: Same Project (Element → Element)
-- Model registration and quality gates
-- Staging deployment with automated testing
-- Production deployment with canary release
-- **Average Duration**: 8m 32s | **Success Rate**: 97.3%
+## 🚀 Quick Start
 
-### Flow 2: Cross-Project (Element → Element)
-- Cross-project authorization and permissions
-- Secure model export and transfer
-- Target environment deployment
-- **Focus**: Governance and security compliance
+### 1. Clone and Setup
 
-### Flow 3: Element → WCNP (Real-time)
-- WCNP integration and containerization
-- High-performance inference endpoints
-- Auto-scaling and load balancing
-- **Target**: <50ms latency, 100K+ TPS
-
-### Flow 4: External → Element
-- External model import and validation
-- Compatibility assessment and adaptation
-- Element ecosystem integration
-- **Focus**: Third-party model onboarding
-
-## 🎯 Key Metrics & KPIs
-
-### Platform Performance
-- **Model Deployment Velocity**: From weeks to hours
-- **Average Response Time**: 24ms (Target: <50ms)
-- **Fraud Prevention Rate**: 89.7% (Target: 80%+)
-- **System Uptime**: 99.95%
-- **Cost Savings**: $2.4M this quarter
-
-### Business Impact
-- **Developer Productivity**: 85% time on models vs infrastructure
-- **Platform Adoption**: 90% of risk models deployed
-- **Time to Market**: 67% reduction in deployment time
-- **ROI**: 340% return on MLOps investment
-
-## 🚦 Getting Started
-
-### Prerequisites
-- Node.js 16+ and npm
-- Modern web browser with JavaScript enabled
-
-### Installation
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd seller-risk-mlops
+cd seller-risk-mlops-streamlit
 
 # Install dependencies
-npm install
-
-# Start development server
-npm start
+pip install -r requirements.txt
 ```
 
-### Building for Production
+### 2. Run the Application
+
 ```bash
-# Create production build
-npm run build
-
-# Serve production build
-npx serve -s build -p 3000
+# Start the Streamlit application
+streamlit run app.py
 ```
 
-## 📱 User Interface
+The application will be available at `http://localhost:8501`
 
-### Design System
-- **Primary Colors**: Walmart blue (#004c91) and complementary blues
-- **Success**: Green (#00a652) for successful operations
-- **Warning**: Orange (#ff8c00) for alerts
-- **Error**: Red (#e53e3e) for failures
-- **Accent**: Purple/teal for ML/AI elements
+### 3. Explore the Platform
 
-### Responsive Design
-- Desktop-first approach with tablet support
-- Interactive elements with hover states and micro-animations
-- Consistent 8px grid system
-- Smooth transitions and loading states
+1. **Start with Platform Overview** - Get familiar with key metrics and system health
+2. **Select a Persona** - Use the persona buttons to switch between different user views
+3. **Navigate Dashboards** - Use the sidebar to explore different functional areas
+4. **Try Interactive Features** - Test the workflow simulation and real-time monitoring
+5. **Experiment with Tools** - Use the model testing playground and strategy management
+
+## 📊 Key Metrics Demonstrated
+
+### Performance Metrics
+- **Inference Latency**: <50ms target with real-time monitoring
+- **Throughput**: 100K+ transactions per second capacity
+- **Model Accuracy**: 92.1% fraud detection accuracy
+- **System Uptime**: 99.95% reliability target
+
+### Business Impact
+- **Fraud Prevention Rate**: 89.7% with continuous improvement
+- **Cost Savings**: $2.4M quarterly savings demonstration
+- **ROI**: 340% return on MLOps platform investment
+- **Time to Market**: 67% reduction in model deployment time
+
+### Operational Excellence
+- **Deployment Success Rate**: 97.3% automated deployment success
+- **Platform Adoption**: 90% user adoption across teams
+- **Developer Productivity**: 85% time focused on model development vs infrastructure
+
+## 🏗️ Application Architecture
+
+```
+seller-risk-mlops-streamlit/
+├── app.py                          # Main Streamlit application
+├── requirements.txt                # Python dependencies
+├── components/                     # Dashboard components
+│   ├── navbar.py                  # Navigation and persona switching
+│   ├── sidebar.py                 # Navigation menu and quick stats
+│   ├── platform_overview.py       # Main platform dashboard
+│   ├── data_scientist_dashboard.py # Data science workspace
+│   ├── mlops_engineer_dashboard.py # MLOps engineering tools
+│   ├── risk_operations_dashboard.py # Risk monitoring center
+│   ├── executive_dashboard.py      # Executive KPIs and strategy
+│   └── workflow_visualization.py   # Interactive deployment flows
+├── utils/                         # Utility modules
+│   ├── styling.py                 # Custom CSS and styling
+│   └── mock_data.py              # Data generation and simulation
+└── README.md                      # This file
+```
+
+## 🎨 Design System
+
+### Color Palette
+- **Primary**: Walmart Blue (#004c91) and complementary blues
+- **Success**: Green (#00a652) for positive metrics and success states
+- **Warning**: Orange (#ff8c00) for alerts and attention items
+- **Error**: Red (#e53e3e) for failures and critical issues
+- **Accent**: Purple (#8b5cf6) and Teal (#14b8a6) for ML/AI elements
+
+### Component Design
+- **Modern Interface**: Clean design with subtle shadows and rounded corners
+- **Responsive Layout**: Adapts to different screen sizes and orientations
+- **Interactive Elements**: Hover effects, progress indicators, and real-time updates
+- **Consistent Spacing**: 8px grid system for visual harmony
 
 ## 🔄 Interactive Demo Features
 
-### Real-Time Simulations
-- **Live Metrics**: Updating every 2-3 seconds with realistic variations
-- **Workflow Animation**: Step-by-step process visualization
-- **Performance Monitoring**: Interactive charts and graphs
-- **System Status**: Real-time health indicators
+### Model Development Simulation
+- **Experiment Tracking**: MLflow-style interface with performance metrics
+- **Model Registry**: Version management and performance comparison
+- **Feature Discovery**: Interactive feature importance and lineage visualization
+- **Testing Playground**: Real-time model inference with explainable AI
 
-### User Interactions
-- **Persona Switching**: Dynamic dashboard adaptation
-- **Flow Selection**: Interactive deployment flow picker
-- **Model Testing**: Real-time inference playground
-- **Strategy Input**: Natural language to configuration translation
+### Deployment Pipeline Visualization
+- **4 Deployment Flows**: Comprehensive coverage of all deployment scenarios
+- **Step-by-Step Progression**: Visual workflow with status indicators
+- **Real-time Monitoring**: Live metrics during deployment simulation
+- **Quality Gates**: Automated testing and validation checkpoints
 
-## 📊 Data Visualizations
+### Risk Operations Center
+- **Live Fraud Detection**: Real-time event streaming simulation
+- **Natural Language Processing**: Strategy creation from plain English
+- **Seller Risk Monitoring**: Individual seller risk profiling and history
+- **Alert Management**: Configurable alerting and response workflows
 
-### Chart Components
-- **Line Charts**: Performance trends and time-series data
-- **Bar Charts**: Model comparison and categorical data
-- **Donut Charts**: Distribution and percentage breakdowns
-- **Metric Cards**: Key performance indicators with trends
+### Executive Dashboard
+- **Strategic KPIs**: High-level business metrics and trends
+- **ROI Analysis**: Financial impact and return on investment tracking
+- **Platform Adoption**: Usage analytics and team productivity metrics
+- **Compliance Monitoring**: Regulatory compliance and audit status
 
-### Mock Data Features
-- **Realistic Datasets**: Representative model experiments and metrics
-- **Dynamic Updates**: Simulated real-time data changes
-- **Interactive Elements**: Hover states and detailed tooltips
-- **Performance Scenarios**: Various load and usage patterns
+## 📈 Success Metrics Visualization
 
-## 🎨 Component Architecture
+The platform demonstrates key success metrics including:
 
-### Core Components
-```
-src/
-├── components/
-│   ├── Navbar.tsx              # Top navigation with persona switcher
-│   ├── Sidebar.tsx             # Side navigation menu
-│   ├── PlatformOverview.tsx    # Main dashboard overview
-│   ├── DataScientistDashboard.tsx
-│   ├── MLOpsEngineerDashboard.tsx
-│   ├── RiskOperationsDashboard.tsx
-│   ├── ExecutiveDashboard.tsx
-│   ├── WorkflowVisualization.tsx
-│   ├── MetricCard.tsx          # Reusable metric display
-│   └── charts/
-│       ├── LineChart.tsx
-│       ├── BarChart.tsx
-│       └── DonutChart.tsx
-├── hooks/                      # Custom React hooks
-├── utils/                      # Utility functions
-└── data/                       # Mock data and constants
-```
+- **Deployment Velocity**: From weeks to hours (67% improvement)
+- **Developer Productivity**: 85% time on models vs infrastructure
+- **Platform Reliability**: 99.95% uptime with automated monitoring
+- **Cost Efficiency**: $2.4M quarterly savings with detailed breakdown
+- **Fraud Prevention**: 89.7% prevention rate with continuous optimization
+
+## 🔧 Customization
+
+### Adding New Dashboards
+1. Create a new component file in `components/`
+2. Implement the render function following existing patterns
+3. Add navigation entry in `components/sidebar.py`
+4. Update the main routing in `app.py`
+
+### Modifying Data Sources
+- Update `utils/mock_data.py` to change data generation
+- Add new metrics in the `generate_mock_metrics()` function
+- Customize time series data patterns and business logic
+
+### Styling Customization
+- Modify `utils/styling.py` for visual changes
+- Update color schemes, fonts, and component styles
+- Add new CSS classes for custom components
+
+## 🚦 Development Guidelines
+
+### Code Organization
+- **Modular Components**: Each dashboard is a separate, reusable component
+- **Data Separation**: Mock data generation isolated in utility modules
+- **Consistent Patterns**: Standard function signatures and return types
+- **Documentation**: Comprehensive docstrings and inline comments
+
+### Performance Optimization
+- **Efficient Rendering**: Streamlit caching for expensive operations
+- **Data Management**: Optimized data structures and minimal recomputation
+- **Resource Usage**: Balanced real-time updates with system performance
 
 ## 🔮 Future Enhancements
 
 ### Planned Features
 - **WebSocket Integration**: True real-time data streaming
-- **Advanced Analytics**: ML model performance prediction
-- **Mobile App**: React Native companion application
-- **API Integration**: Connection to actual MLOps services
-- **User Authentication**: Role-based access control
-- **Audit Logging**: Complete activity tracking
+- **Advanced Analytics**: Machine learning insights and predictions
+- **Multi-tenant Support**: Organization and team-based access control
+- **API Integration**: Connection to actual MLOps infrastructure
+- **Mobile Optimization**: Enhanced mobile and tablet experience
 
-### Scalability Considerations
-- **Micro-frontend Architecture**: Component federation
-- **State Management**: Redux or Zustand for complex state
-- **Performance Optimization**: Code splitting and lazy loading
-- **Testing Suite**: Comprehensive unit and integration tests
-
-## 📈 Success Metrics
-
-### Platform Adoption
-- **User Engagement**: Daily active users and session duration
-- **Feature Utilization**: Most-used dashboard components
-- **Workflow Completion**: End-to-end process success rates
-- **User Feedback**: Satisfaction scores and improvement suggestions
-
-### Technical Performance
-- **Load Times**: Page load and interaction responsiveness
-- **Error Rates**: Component failure and recovery metrics
-- **Browser Compatibility**: Cross-browser testing results
-- **Accessibility**: WCAG 2.1 AA compliance scores
+### Integration Opportunities
+- **CI/CD Integration**: Connect to actual deployment pipelines
+- **Monitoring Systems**: Integration with Prometheus, Grafana, and APM tools
+- **Data Sources**: Live connections to databases and data warehouses
+- **Authentication**: SSO and role-based access control implementation
 
 ## 🤝 Contributing
 
-This is a demonstration mockup for stakeholder review and feedback. For suggestions or improvements:
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-1. Review the interactive demo
-2. Provide feedback on user experience flows
-3. Suggest additional features or personas
-4. Report any display or interaction issues
+## 📝 License
 
-## 📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-This project is for internal demonstration purposes only. All Walmart trademarks and branding are property of Walmart Inc.
+## 🙋‍♂️ Support
 
-## 🙋‍♀️ Support
+For questions, issues, or feature requests:
+- Create an issue in the repository
+- Contact the development team
+- Refer to the inline documentation and code comments
 
-For questions about the MLOps platform mockup:
-- Technical issues: Check browser console for errors
-- Feature requests: Document specific use cases and requirements
-- User experience feedback: Include screenshots and workflow descriptions
+## 🎯 Demo Scenarios
+
+### For Data Scientists
+1. Explore the experiment tracking interface
+2. Test model performance comparison tools
+3. Use the feature discovery and importance ranking
+4. Try the real-time inference playground
+
+### For MLOps Engineers
+1. Simulate deployment workflows
+2. Monitor infrastructure and system health
+3. Configure deployment pipelines
+4. Review performance and reliability metrics
+
+### For Risk Operations
+1. Monitor live fraud detection events
+2. Create natural language strategies
+3. Investigate seller risk profiles
+4. Analyze fraud prevention effectiveness
+
+### For Executives
+1. Review strategic KPIs and ROI metrics
+2. Analyze platform adoption and productivity
+3. Assess risk management effectiveness
+4. Plan future investments and roadmap
 
 ---
 
-**Built with ❤️ for the Walmart MLOps Team**
-
-*Demonstrating the future of seller risk management through intelligent automation and seamless user experiences.*
+Built with ❤️ for the Walmart MLOps Team using Streamlit, Plotly, and modern Python technologies.
